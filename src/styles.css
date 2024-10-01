@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "WorkSansBold";
+  src: url("/assets/fonts/static/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSansRegular";
+  src: url("/assets/fonts/static/WorkSans-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "WorkSansBold", sans-serif;
+  background-color: #faebfb;
+  background-image: url("assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+  }
+}
